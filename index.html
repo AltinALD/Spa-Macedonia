@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="mk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spa Macedonia | Luxury Inflatable Jacuzzis in Skopje</title>
+    <meta
+      name="description"
+      content="Spa Macedonia offers premium inflatable outdoor jacuzzis and spas in Skopje, North Macedonia. Trusted by 1000+ satisfied clients."
+    />
+    <meta
+      name="keywords"
+      content="Spa Macedonia, jacuzzi North Macedonia, inflatable spa Skopje, luxury outdoor spa"
+    />
+    <meta name="theme-color" content="#090b10" />
+    <meta property="og:title" content="Spa Macedonia | Luxury Spa Experience at Home" />
+    <meta
+      property="og:description"
+      content="Transform your home into a luxury spa experience with premium inflatable jacuzzis."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-reflection"></div>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Spa Macedonia Home">
+          <img class="brand-logo" src="images/logo.png" alt="Spa Macedonia Logo" loading="lazy" />
+          <span class="brand-text">Spa Macedonia</span>
+        </a>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="mk">MK</button>
+          <button type="button" class="lang-btn" data-lang="sq">AL</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="siteNav">
+          <a href="#about" data-i18n="navAbout">За нас</a>
+          <a href="#models" data-i18n="navModels">Модели</a>
+          <a href="#testimonials" data-i18n="navClients">Клиенти</a>
+          <a href="#gallery" data-i18n="navGallery">Галерија</a>
+          <a href="#contact" class="nav-cta" data-i18n="navContact">Контакт</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="bubbles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="container hero-content reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">Луксузен велнес во Скопје</p>
+          <h1 data-i18n="heroTitle">Трансформирајте го домот во луксузно спа искуство</h1>
+          <p class="hero-sub" data-i18n="heroSub">
+            Премиум надувувачки надворешни џакузи и спа за модерни домови низ Северна Македонија.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact" data-i18n="ctaContact">Контактирајте не</a>
+            <a class="btn btn-secondary" href="#models" data-i18n="ctaModels">Види модели</a>
+          </div>
+        </div>
+        <div class="trust-badges container reveal">
+          <article><strong>1000+</strong><span data-i18n="badgeClients">Задоволни клиенти</span></article>
+          <article><strong data-i18n="badgePremiumStrong">Премиум</strong><span data-i18n="badgeQuality">Квалитет</span></article>
+          <article><strong data-i18n="badgeFastStrong">Брза</strong><span data-i18n="badgeDelivery">Достава достапна</span></article>
+        </div>
+      </section>
+
+      <section class="about section reveal" id="about">
+        <div class="container two-col">
+          <div>
+            <p class="eyebrow" data-i18n="aboutEyebrow">За Spa Macedonia</p>
+            <h2 data-i18n="aboutTitle">Каде комфорот се среќава со престижот</h2>
+            <p data-i18n="aboutP1">Лоцирани во Скопје, им помагаме на семејства и сопственици да создадат домашен луксузен спа агол.</p>
+            <p data-i18n="aboutP2">Комуницираме на албански, македонски, англиски, турски и германски за целосна поддршка од избор до инсталација.</p>
+          </div>
+          <div class="glass-card">
+            <h3 data-i18n="aboutCardTitle">Создадено за модерен живот</h3>
+            <ul>
+              <li data-i18n="aboutLi1">Комфорт, велнес и длабока релаксација</li>
+              <li data-i18n="aboutLi2">Елегантни производи со премиум изработка</li>
+              <li data-i18n="aboutLi3">Сигурно водство од избор до поставување</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="models section" id="models">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="modelsEyebrow">Модели</p>
+            <h2 data-i18n="modelsTitle">Пронајдете ја идеалната димензија</h2>
+          </div>
+          <div class="card-grid" id="productGrid"></div>
+        </div>
+      </section>
+
+      <section class="testimonials section reveal" id="testimonials">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="testEyebrow">Задоволство на клиенти</p>
+            <h2 data-i18n="testTitle">1000+ задоволни клиенти</h2>
+          </div>
+          <div class="testimonial-slider" id="testimonialSlider">
+            <button class="slider-btn" id="prevReview" aria-label="Previous review">&#10094;</button>
+            <div class="review-card" id="reviewCard"></div>
+            <button class="slider-btn" id="nextReview" aria-label="Next review">&#10095;</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="galleryEyebrow">Луксузна галерија</p>
+            <h2 data-i18n="galleryTitle">Атмосфера на релаксација</h2>
+          </div>
+          <div class="masonry reveal" id="galleryGrid"></div>
+        </div>
+      </section>
+
+      <section class="why section reveal" id="why">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="whyEyebrow">Зошто ние</p>
+            <h2 data-i18n="whyTitle">Доверливо премиум искуство</h2>
+          </div>
+          <div class="features-grid">
+            <article class="feature-card"><h3 data-i18n="f1t">Премиум квалитет</h3><p data-i18n="f1d">Издржливи материјали и висока удобност.</p></article>
+            <article class="feature-card"><h3 data-i18n="f2t">Брза комуникација</h3><p data-i18n="f2d">Брз одговор на секое барање.</p></article>
+            <article class="feature-card"><h3 data-i18n="f3t">Повеќејазична поддршка</h3><p data-i18n="f3d">Албански, македонски, англиски, турски, германски.</p></article>
+            <article class="feature-card"><h3 data-i18n="f4t">Достава и инсталација</h3><p data-i18n="f4d">Едноставен процес од нарачка до поставување.</p></article>
+            <article class="feature-card"><h3 data-i18n="f5t">1000+ доверливи клиенти</h3><p data-i18n="f5d">Докажан квалитет низ Северна Македонија.</p></article>
+            <article class="feature-card"><h3 data-i18n="f6t">Енергетска ефикасност</h3><p data-i18n="f6d">Создадено за практична долгорочна употреба.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container two-col reveal">
+          <div class="contact-info">
+            <p class="eyebrow" data-i18n="contactEyebrow">Контакт</p>
+            <h2 data-i18n="contactTitle">Започнете го вашето домашно спа патување</h2>
+            <p data-i18n="contactP">Контактирајте не за препорака на најдобриот модел за вашиот простор.</p>
+            <ul>
+              <li><strong data-i18n="phoneLabel">Телефон:</strong> <a href="tel:+38971590202">071590202</a></li>
+              <li><strong data-i18n="locationLabel">Локација:</strong> <span data-i18n="locationValue">Скопје, Северна Македонија</span></li>
+              <li><strong>Instagram:</strong> <a href="#" aria-label="Instagram">Spa Macedonia</a></li>
+              <li><strong>Facebook:</strong> <a href="#" aria-label="Facebook">Spa Macedonia</a></li>
+            </ul>
+            <a class="btn btn-whatsapp" href="https://wa.me/38971590202" target="_blank" rel="noreferrer"
+              data-i18n="whatsappBtn">WhatsApp Сега</a
+            >
+          </div>
+          <form class="contact-form glass-card">
+            <label for="name" data-i18n="formName">Име и презиме</label>
+            <input id="name" type="text" name="name" placeholder="Вашето име" required />
+            <label for="phone" data-i18n="formPhone">Телефон</label>
+            <input id="phone" type="tel" name="phone" placeholder="+389..." required />
+            <label for="message" data-i18n="formMessage">Порака</label>
+            <textarea id="message" name="message" rows="4" placeholder="Кажете ни кој модел ве интересира"></textarea>
+            <button class="btn btn-primary" type="submit" data-i18n="formSubmit">Испрати барање</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p data-i18n="footerCopy">&copy; <span id="year"></span> Spa Macedonia. Сите права се задржани.</p>
+        <nav>
+          <a href="#about" data-i18n="navAbout">За нас</a>
+          <a href="#models" data-i18n="navModels">Модели</a>
+          <a href="#gallery" data-i18n="navGallery">Галерија</a>
+          <a href="#contact" data-i18n="navContact">Контакт</a>
+        </nav>
+      </div>
+    </footer>
+
+    <a class="floating-contact" href="tel:+38971590202" aria-label="Call Spa Macedonia" data-i18n="floatingCall">Јави се</a>
+
+    <dialog id="productModal" class="product-modal">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-body">
+        <img id="modalMainImage" src="" alt="Spa model" loading="lazy" />
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+          <p><strong id="modalDimensionsLabel">Димензии:</strong> <span id="modalSize"></span></p>
+          <p><strong id="modalPriceLabel">Цена:</strong> <span id="modalPrice"></span></p>
+          <div class="modal-gallery" id="modalGallery"></div>
+          <a href="#contact" class="btn btn-primary" id="modalRequestBtn">Побарај понуда</a>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
